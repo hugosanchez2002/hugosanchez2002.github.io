@@ -1,0 +1,96 @@
+.contenedor {
+    background-color: black;
+    position: absolute;
+}
+/* degradado de abajo hacia arriba */
+.degradado1 {
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to bottom,red, white);
+}
+
+/* degradado de izquierda hacia derecha */
+.degradado2 { 
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to left,red, white);
+}
+
+/* degradado de izquierda a derecha */
+.degradado3 { 
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to right,red, white);
+}
+
+/* agregamos degradado de arriba hacia abajo */
+.degradado4 {
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to top,red, white);
+}
+
+/* Agregamos undegradado de muchos colores de arriba hacia abajo */
+
+.degradado5 {
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(to top,red,
+    orangered,
+    yellow,
+    green,
+    blue
+);
+}
+
+/* agregamnos un degradado  con muchos colores  */
+
+.degradado6 {
+    width: 500px;
+    height: 250px;
+    background: radial-gradient(red,
+    orangered,
+    yellow,
+    green,
+    blue);
+}
+
+
+/* aplicamos los degradados aplicando los angulos de inclinacion */
+/* generamos un degradado de abajo hacia arriba */
+
+.degradado7 {
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(180deg,red, white);
+}
+
+/* degradado de izquierda hacia derecha */
+.degradado8 { 
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(-90deg,red, white);
+}
+
+/* degradado de izquierda a derecha */
+.degradado9 { 
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(90deg,red, white);
+}
+
+/* agregamos degradado de arriba hacia abajo */
+.degradado10 {
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(0,red, white);
+}
+
+/* generamos un degradado con angulo de inclinacion especifico */
+.degradado11 {
+    width: 500px;
+    height: 250px;
+    background: repeating-linear-gradient(70deg,rgb(0, 38, 255), rgb(187, 255, 0));
+}
+
+

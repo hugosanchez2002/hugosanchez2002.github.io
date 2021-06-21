@@ -1,0 +1,59 @@
+body {
+    background-color: blue;
+}
+
+.contenedor {
+    background-color: gray;
+}
+
+  /*  Aplicamos estilo para que la tabla ocupe todo el espacio */
+  /* Aplicamos un borde a la tabla */
+table {
+    width: 100%;
+    border: 4px solid darkorange;
+    border-collapse: collapse;
+}
+
+thead th,
+tbody td {
+    border: 4px solid darkblue;
+}
+  /*  Alineamos el texto al centro y superior */
+th {
+    height: 50px;
+    text-align: center;
+    vertical-align: top;
+    background-color: orange;
+    color: white;
+}
+
+  /* Agregamos un color cuando pasemos por las filas */
+
+table tbody tr:hover {
+    background-color: black;
+    color: gainsboro;
+}
+
+.tabla1 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+}
+.tabla1 td,
+.tabla1 th {
+    border: 1px solid gainsboro;
+}
+
+.tabla1 th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: darkblue;
+    color: white;
+}
+.tabla1 tr:hover {
+    background-color: skyblue;
+    color: darkblue;
+}
+

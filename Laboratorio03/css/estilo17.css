@@ -1,0 +1,42 @@
+.visible {
+    background-color: darkcyan;
+    width: 300px;
+    height: 100px;
+    border: 1px dotted rgb(9, 255, 0);
+    overflow: visible;
+}
+
+.oculto {
+    background-color: darkcyan;
+    width: 300px;
+    height: 100px;
+    border: 1px dotted rgb(9, 255, 0);
+    overflow: hidden;
+}
+
+.barra {
+    background-color: darkcyan;
+    width: 300px;
+    height: 100px;
+    border: 1px dotted rgb(9, 255, 0);
+    overflow: scroll;
+}
+
+.automatico {
+    background-color: darkcyan;
+    width: 300px;
+    height: 100px;
+    border: 1px dotted rgb(9, 255, 0);
+    overflow: auto;
+}
+
+/* tendria que ser el texto mas amplio para que la barra se mueva  */
+.doble {
+    background-color: darkcyan;
+    width: 300px;
+    height: 100px;
+    border: 1px dotted rgb(255, 0, 0);
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+

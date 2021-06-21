@@ -1,0 +1,70 @@
+body {
+  background-color: grey;
+  }
+  
+  .contenedor {
+  background-color: indianred;
+  }
+  
+  .cajal {
+  background-color: white; 
+  border-style: solid;
+  border-width: Spx; 
+  border-color: indigo;
+  }
+  
+  /* Agregar margenes para cad a etiq ueta div */
+  /* Agregamos margen a la izq uierda */
+  .caja2 {
+  background-color: white; 
+  border-style: solid;
+  border-width: Spx;
+  border-color: indigo;
+  margin-left: 40px;
+  }
+
+  /* Agregamos margen a la d erecha */
+  .caja3 {
+  background-color: white; 
+  border-style: solid;
+  border-width: 5px;
+  border-color: indigo; 
+  margin-right: 40px;
+  }
+  
+  /* Agregamos margen a la parte superior */
+  .caja4 {
+  background-color: white;
+  border-style: solid;
+  border-width: Spx; 
+  border-color: indigo; 
+  margin-top: 40px;
+  }
+
+  /* Agregamos margen a la parte inferior */
+  .cajas {
+  background-color: white; 
+  border-style: solid;
+  border-width: Spx; 
+  border-color: indigo; 
+  margin-bottom: 40px;
+  }
+
+  /* Agregamos margen personalizado */
+  .caja6 {
+  background-color: white; 
+  border-style: solid;
+  border-width: 5px; 
+  border-color: indigo;
+  margin: 20px 80px 30px 10px;
+  }
+  
+  /* Agregamos el div al medio d e todo */
+  .caja7 {
+  background-color: white; 
+  border-style: solid;
+  border-width: Spx; 
+  border-color: indigo; 
+  margin: auto;
+  }
+  

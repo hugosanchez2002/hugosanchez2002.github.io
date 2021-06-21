@@ -1,0 +1,25 @@
+#menuprincipal{
+    color: mediumvioletred;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#titulo1{
+    color: rgb(49, 49, 133);
+    font-weight: bolder;
+}
+
+#titulo2{
+    color: navy;
+    font-weight: bolder;
+}
+#parrafo1{
+    color: orangered;
+    font-style: italic;
+}
+
+#parrafo2{
+    color: palegreen;
+    font-weight: bolder;
+}
+

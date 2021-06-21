@@ -1,0 +1,28 @@
+.caja1 {
+    width: 300px;
+    margin: auto;
+    border: 5px solid rgb(255, 60, 0); 
+}
+
+/* define el tammaño maximo que puede tener el elemento */
+.caja2 {
+    max-width: 300px;
+    margin: auto;
+    border: 5px solid rgb(76, 0, 255);
+}
+
+.contenedor {
+    width: 95%;
+    height: 400px;
+    margin: auto;
+    background-color: rgb(251, 255, 0);
+}
+
+.contenedor2 {
+    width: 95%;
+    max-width: 800px;
+    height: 400px;
+    margin: auto;
+    background-color: rgb(255, 115, 0);
+}
+
