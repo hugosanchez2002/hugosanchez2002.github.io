@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="esn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2</title>
+    <script type="text/javascript">
+    //Declarando e inicu¡ializando variables
+    var tur="", men="";
+    //Capturando valores
+    tur=prompt("Ingrese el turno M o T o N: ")
+    //Condicion
+    if(tur==m){
+        men="Mañana";
+    }else{
+        if(tur==t){
+            men="Tarde";
+        }else{
+            if(tur==n){
+                men="Noche"
+            }else{
+                men="No es una letra valida"
+            }
+        }
+    }
+
+    //Mostrando resultados
+    alert("El turno es: "+men);
+    </script>
+</head>
+<body>
+    <button class="regreso">
+        <a  href="index.html">REGRESAR</a>
+    </button>
+</body>
+</html>
