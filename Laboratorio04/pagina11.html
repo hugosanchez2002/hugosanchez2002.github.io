@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Parte 3</title>
+    <script>
+        // Estructuras repetitivas 
+        //Te permite repetir un bloque de codigo
+        //While , do while , for 
+        // "Contador", es importante tener un contador porque sino se genera un bucle infinito
+        //Para la sintaxis de un contador 
+        // contador = contador + x , "x" puede ser un valor del cual incrementara el contador.
+        // While(condicion){
+        //     -- programas --
+        //     cont = cont + valor;
+        // }
+
+        // do {
+        //     .. programas ..
+        //     cont = cont + valor;
+        // } while(condicion);
+        // for(i = valor inicial , i<valorfinal, i = i+valor){
+        //     --programas--
+        // }
+
+        // Ejemplo 1 
+        // Desarrollar una aplicacion que te permita ingresar tu nombre y te salude 5 veces.
+
+    //     var nom = "", cont = 0;
+
+    //     nom = prompt("Ingrese su nombre :");
+
+    //     while(cont<5){
+    //         alert("Hola como estas " + nom);
+    //         cont = cont + 1;
+    //     }
+    //     cont = 0;
+    //     do{
+    //         alert("Hola como estas " + nom);
+    //         cont = cont + 1;
+    //     }while(cont<5);
+
+    //     for(cont = 0; cont<5; cont++){
+    //         alert("Hola como estas " + nom);
+    //         cont = cont + 1;
+    //     }
+
+    //Ejemplo 2 
+    //Desarrollar una aplicacion que te permita mostrar los n  primeros numeros  naturales
+
+    // var cont = 0, cant = 0;
+
+    // cant = parseInt(prompt("Ingrese la cantidad de alumnos: "));
+
+    // //While
+    // while(cont<cant){
+    //     document.write(cont + "<br>");
+    //     cont++;
+    // }
+
+    // //do while 
+    // cont = 0;
+    // do{
+    //     document.write(cont + "<br>");
+    //     cont++;
+    // }while(cont<cant);
+
+    // for(cont = 0; cont<cant; cont++){
+    //     document.write(cont + "<br>");
+    //     cont++;
+    // }
+
+    //Acumulador > te permite ir sumando valores a una variable  de acuerdo  a cada vuelta del bucle
+
+    // acumulador = acumulador + valor;
+
+    //Ejemplo 3 
+    // Desarrollar una aplicacion que permita sumar los n primeros numeros.
+
+    // 
+    
+    //Ejemplo 4
+
+    var cont = 0, cant = 0, num = 0;
+
+    cant = parseInt(prompt("Ingresa la cantidad de numeros : "));
+    num = parseInt(prompt("Ingrese el numero de la tabla"));
+
+    //While 
+    while(cont<cant){
+        alert(cont  + "X" + num + " = " + (cont*num) );
+        cont++;
+    }
+
+    //DOWHILE
+    cont = 0;
+
+    do{
+        alert(cont  + "X" + num + " = " + (cont*num) );
+        cont++;
+    }while(cont<cant);
+
+    for(cont = 0; cont<cant; cont++){
+        alert(cont  + "X" + num + " = " + (cont*num) );
+    }
+</script>
+</head>
+<body>
+    <a class="regreso" href="index.html">REGRESAR</a>
+
+</body>
+</html>

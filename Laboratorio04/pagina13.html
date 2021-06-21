@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Parte 4</title>
+    <link rel="stylesheet" href="/css/nada.css">
+    <script>
+        //Funciones y  procedimientos en javascript
+        //Los procedimientos y funciones permiten agrupan codigo de formula modular de tal manera que puedo tener bloques de codigo y volver a utilizarlos.
+
+        //Funciones
+        //Las funciones siempre devuelven un valor
+        
+        //Sintaxis
+        //function NombreFuncion(parametros){
+        //     --Programas--
+        //     return valor;
+        // }
+
+        //Parametros: Son valores que pueden o no estar presentes en la funcion, son valores que necesita la funcion en caso no esten presentes.
+
+        //Return: Es el valor que va devolver la funcion, este valor sera importante porque define el tipo de dato de la funcion.
+        
+        //Ejemplos1
+        //Desarrollar una aplicacion que permita ingresar 2 numeros y calcular operaciones basicas.
+
+        //variables: n1 , n2 , sum , res , mul , div
+
+        // Podemos utilizar Formularios si no deseamos utilizar el alert y document
+
+        //Atributos importantes (ID Y NAME)
+
+        //CONTROLES : label > permite escribir un valor en el formulario (Etiqueta)
+
+        //<label for=""></label>
+        //El "for" indica a que control esta relacionado el label.
+
+        //Input : text
+        //Permite ingresar y mostrar valores.
+
+        //Todo valor que se ingrese en la caja de texto sera  convertido en texto automaticamente, para recuperar algun valor  numerico es necesario hacer conversiones utilizando parserInt o parseFloat.
+
+        //<input type="text">
+
+        //Input:button 
+        //permite ejecutar una accion , por lo general este control va a llamar al javascript para ejecutar la accion
+        //<input type="button" value="">
+
+        //Input : Reset
+        //Borra todos los valores que estan dentro de los controles del formulario.
+        //<input type="reset" value="">
+
+        //Eventos
+        //Son acciones que se realizan en algunos controles
+        //EJ: Para el input de tipo button se aplicara un evento para cuando el usuario le de click
+        //onclick="Llama a la funcion de javascript"
+        //Capturando valores del formulario, utilizamos lo siguiente...
+        //document.getElementById("Identificadorcontrol").Propiedadcontrol
+        //document.getElementById("Identificadorcontrol").value;
+
+        function CalculaSuma(num1,num2){
+            return num1 + num2;
+        }
+        function CalculaResta(num1,num2){
+            return num1 - num2;
+        }
+        function CalculaMultiplicacion(num1,num2){
+            return num1 * num2;
+        }
+        function CalculaDivision(num1,num2){
+            return num1 / num2;
+        }
+
+        
+
+        //Creamos un procedimiento para calcular las operaciones 
+        function Calcular(){
+            if(document.getElementById("txtN1").value==""){
+                alert("Ingrese el Número 1");
+                document.getElementById("txtN1").focus();
+            }else if(document.getElementById("txtN2").value==""){
+                alert("Ingrese el Número 2");
+                document.getElementById("txtN2").focus();
+            }else{
+                var n1 = 0, n2 = 0, sum = 0, res = 0, mul = 0, div = 0;
+
+        n1 = parseFloat(document.getElementById("txtN1").value);
+        n2 = parseFloat(document.getElementById("txtN2").value);
+
+        sum = CalculaSuma(n1,n2);
+        res = CalculaResta(n1,n2);
+        mul = CalculaMultiplicacion(n1,n2);
+        div = CalculaDivision(n1,n2);
+
+        document.getElementById("txtSum").value=sum;
+        document.getElementById("txtRes").value=res;
+        document.getElementById("txtMul").value=mul;
+        document.getElementById("txtDiv").value=div;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="caja">
+    <form action="">
+        <label for="txtN1">Numero 1 :</label>
+        <input type="text" name="txtN1" id="txtN1"><br>
+
+        <label for="txtN2">Numero 2 :</label>
+        <input type="text" name="txtN2" id="txtN2"><br>
+
+        <label for="txtSum">Suma : </label>
+        <input type="text" name="txtN3" id="txtSum"><br>
+
+        <label for="txtRes">Resta :</label>
+        <input type="text" name="txtN4" id="txtRes"><br>
+
+        <label for="txtMul">Multiplicacion :</label>
+        <input type="text" name="txtN5" id="txtMul"><br>
+
+        <label for="txtDiv">Division :</label>
+        <input type="text" name="txtN5" id="txtDiv"><br>
+
+        <input type="button" name="btnCalcular" onclick="Calcular()" id = "btnCalcular" value="Calcular">
+        <input type="reset" name="btnlimpiar" id = "btrlimpiar" value="Limpiar">
+        <a class="regreso" href="index.html">REGRESAR</a>
+
+    </form>
+</div>
+</body>
+</html>

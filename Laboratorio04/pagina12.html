@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Parte 4</title>
+    <script type="text/javascript">
+
+        //Funciones y  procedimientos en javascript
+        //Los procedimientos y funciones permiten agrupan codigo de formula modular de tal manera que puedo tener bloques de codigo y volver a utilizarlos.
+
+        //Funciones
+        //Las funciones siempre devuelven un valor
+        
+        //Sintaxis
+        //function NombreFuncion(parametros){
+        //     --Programas--
+        //     return valor;
+        // }
+
+        //Parametros: Son valores que pueden o no estar presentes en la funcion, son valores que necesita la funcion en caso no esten presentes.
+
+        //Return: Es el valor que va devolver la funcion, este valor sera importante porque define el tipo de dato de la funcion.
+        
+        //Ejemplos1
+        //Desarrollar una aplicacion que permita ingresar 2 numeros y calcular operaciones basicas.
+
+        //variables: n1 , n2 , sum , res , mul , div
+
+        function CalculaSuma(num1,num2){
+            return num1 + num2;
+        }
+        function CalculaResta(num1,num2){
+            return num1 - num2;
+        }
+        function CalculaMultiplicacion(num1,num2){
+            return num1 * num2;
+        }
+        function CalculaDivision(num1,num2){
+            return num1 / num2;
+        }
+
+        var n1 = 0, n2 = 0, sum = 0, res = 0, mul = 0, div = 0;
+
+        n1 = parseFloat(prompt("Ingrese el numero 1 : "));
+        n2 = parseFloat(prompt("Ingrese el numero 2 : "));
+
+        sum = CalculaSuma(n1,n2);
+        res = CalculaResta(n1,n2);
+        mul = CalculaMultiplicacion(n1,n2);
+        div = CalculaDivision(n1,n2);
+
+        alert("La suma  es : " + sum);
+        alert("La multiplicacion  es : " + mul);
+        alert("La resta  es : " + res);
+        alert("La division  es : " + div);
+
+    </script>
+</head>
+<body>
+    <a class="regreso" href="index.html">REGRESAR</a>
+
+</body>
+</html>

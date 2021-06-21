@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Parte 3</title>
+    <script>
+        // Estructuras selectivas 
+        //Se basa eb ka evaluacion de casos
+        //Texto
+        //Sintaxis
+        // switch(variable){
+        //     case valor1:
+        //     -- Programas --
+        //     break;
+        //     case valor2:
+        //     -- Programas --
+        //     break;
+        //     case valorn:
+        //     -- Programas --
+        //     break;
+        //     default:
+        //     -- Programas --
+        //     break;
+        // }
+        // valor1 , valor 2 , --- valor n deben ser del mismo tipo de la variable que se esta evaluando.
+        // Podemos reemplazar un si anidado por una estructura selectiva siempre y cuando la estructura no tenga conectores logicos.
+
+        //Ejemplo 1
+
+        //Desarrollar una aplicacion que permita calcular el sueldo final de un trabajador si se sabe que su sueldo basico se ingresa por el teclado, adicional a eso se le va a calcular una bonificacion y un descuento dependiendo de la categoria a la cual pertenezca, tal como se muestra a continuación.
+
+        // var cate = 0, bono = 0, desc = 0, sueldob = 0, sueldof = 0;
+
+        // sueldob = parseFloat(prompt("Ingresa el sueldo basico  del trabajador: "));
+        // cate = prompt("Ingresa la categoria: [A] o [B] o [C]");
+
+        // switch(cate.toLowerCase()){
+        // ".toLowerCase ( para minusculas )"
+        //     case "a":
+        //         bono=sueldob*0.07;
+        //         desc=sueldob*0.05;
+        //     break;
+
+        //     case "b":
+        //         bono=sueldob*0.09;
+        //         desc=sueldob*0.07;
+        //     break;
+
+        //     case "c":
+        //         bono=sueldob*0.11;
+        //         desc=sueldob*0.09;
+        //     break;
+
+        //     default:
+        //         bono = 0;
+        //         desc = 0;
+        //     break;
+        // }
+        // sueldof = sueldob + bono - desc;
+
+        // alert("El sueldo basico es :" + sueldob);
+        // alert("La bonificacion es :" + bono);
+        // alert("El descuento es : " + desc);
+        // alert("El sueldo final es : " + sueldof);
+
+        //Ejemplo 2
+
+        //Desarrollar una aplicacion que permita ingresar el precio de un producto y la cantidad a comprar y dependiendo de la categoria aplicara un descuento a su subtotal. Tal como se muestra acontinuacion.
+
+        var precio = 0, cantidad = 0, subtotal = 0, descuento = 0, total = 0, cate = 0;
+
+        precio= parseFloat(prompt("Ingrese el precio del producto : "));
+        cantidad = parseInt(prompt("Ingrese la cantidad a comprar : "));
+        cate = parseInt(prompt("Ingrese la categoria [1] [2] [3] [4]"));
+
+        subtotal = precio*cantidad;
+
+        switch(cate){
+            case 1:
+                descuento = subtotal*0.03;
+            break;
+            case 2:
+                descuento = subtotal*0.05;
+            break;
+            case 3:
+                descuento = subtotal*0.07;
+            break;
+            case 4:
+                descuento = subtotal*0.09;
+            break;
+            default:
+                descuento=0;
+            break;
+        }
+        total = subtotal - descuento;
+        
+        alert("El subtotal es : " + subtotal);
+        alert("El descuento es : " + descuento);
+        alert("El total es  : " +  total);
+    </script>
+</head>
+<body>
+    <a class="regreso" href="index.html">REGRESAR</a>
+
+</body>
+</html>

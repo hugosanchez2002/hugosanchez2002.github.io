@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Parte 4</title>
+    <script>
+        //Ejemplo 3
+    //Desarrollar una aplicacion que permita ingresar tu edad y en base a tu edad 
+    //mostrar un mensaje indicando "Eres mayor de edad" si tue  edad es mayor o 
+    //igual a 18 en caso contrario mostrar un mensaje indicando "Eres menor de 
+    //edad"
+
+        //Variables
+        //2
+        //Tipo
+        //Real
+        //Cuales
+        //Edad , mensaje
+        //Que variables voy a leer
+
+        //Edad
+
+        function MostrarMensaje(ed){
+            var m = "";
+            if(ed>=18){
+                m="Eres Mayor de edad";
+            }else{
+                m="Eres Menor de edad";
+            }
+            return m;
+        }
+
+        function Mostrar(){
+            var txtEdad=document.getElementById("txtEdad");
+            var txtMen=document.getElementById("txtMen");
+            if(txtEdad.value==""){
+                alert("Ingresa tu edad");
+                txtEdad.focus();
+            }else{
+                var edad=0, men="";
+                edad=parseFloat(txtEdad.value);
+                men=MostrarMensaje(edad);
+                txtMen.Value=men;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="txtEdad">Edad:</label>
+        <input type="text" name="txtEdad" id="txtEdad">
+        <br>
+        <label for="txtMen">Mensaje :</label>
+        <input type="text" name="txtMen" id="txtMen" value="Mensaje">
+        <br>
+        <input type="button" value="Mostrar" id = "btnMostrar" name="btnMostrar" onclick="Mostrar()">
+        <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+        <a class="regreso" href="index.html">REGRESAR</a>
+
+    </form>
+</body>
+</html>

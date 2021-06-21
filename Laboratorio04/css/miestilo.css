@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background: #f2f2f2;
+}
+
+.contenedor{
+    width: 400px;
+    margin: 40px auto;
+    background: #fff;
+}
+
+.formulario .contenedorinput{
+    padding: 20px;
+    border-radius: 6px 6px 0 0;
+}
+
+.formulario input[type="text"],
+.formulario input[type="mail"]{
+    display: block;
+    width: 100%;
+    margin-bottom:20px;
+    padding: 15px 20px;
+    border: none;
+    border-bottom: 2px #ccc solid;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="mail"]:focus{
+    border-bottom: 2px solid #246eb9;
+}
+
+/* .formulario input[type="radio"]{
+    display: none;
+} */
+
+.botondeopciones{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.botondeopciones label{
+    color: #246eb9;
+    width: 50%;
+}
+
+
+.formulario .botondeopciones label{
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+}
+.formulario .botondeopciones label{
+    margin: auto;
+}
+
+.formulario input[type="radio"]:checked+ .botondeopciones label{
+    background-color: #f9a03f;
+    color: #fff;
+}
+
+.casillaverificacion{
+    text-align: center;
+    color: #424242;
+}
+
+.casillaverificacion label{
+    margin:10px;
+}
+
+.formulario .error{
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: #ce1818;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 40px;
+}
+
+.boton{
+    width: 100%;
+    text-align: center;
+    background-color: #246eb9;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+    font-size: 18px;
+}
+
+.formulario .boton:hover{
+    background-color: #4357ad;
+}
