@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: #131313;
+    font-family:'Helvetica Neue', sans-serif;
+}
+
+.lg {
+    text-align: center;
+    font-family: initial;
+    font-size: 50px;
+    background-color: rgb(103, 136, 69);
+    color: rgb(255, 255, 255);
+
+}
+h2 a {
+font-size: 90px;
+color: #ffee00;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.hb {
+display: none;
+box-shadow: 0px 6px 8px #131313(0, 0, 0, 0.7);
+}
+
+.hb:target {
+position: absolute;
+right: 0;
+top: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.hb .content {
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+width: 0;
+height: 0;
+color: rgb(255, 255, 255);
+background-color: #191919;
+animation: 1s grow ease forwards;
+text-align: center;
+}
+
+.nav_list  {
+list-style-type: none;
+}
+
+.nav_list a {
+text-decoration: none;
+font-size: 50px;
+color: rgb(0, 255, 149);
+}
+
+.nav_list_item {
+height: 100%;
+overflow: hidden;
+}
+
+.nav_list li {
+padding: 15px 0;
+text-transform: uppercase;
+transform: translateY(200px);
+opacity: 0;
+animation: 2s slideUp ease forwards .5s;
+position: relative;
+}
+
+.nav_list li::before {
+content: '';
+position: absolute;
+height: 2px;
+width: 0px;
+left: 0;
+bottom: 10px;
+background: #0300b6; 
+transition: all .5s ease;
+}
+
+.nav_list li:hover:before {
+width: 100%;
+}
+
+.hb p {
+padding: 50px;
+opacity: 0;
+animation: 1s fadeIn ease forwards 1s;
+}
+
+.hb .sg::after {
+right: 0;
+top: 0;
+width: 50px;
+height: 50px;
+position: absolute;
+display: flex;
+z-index: 1;
+font-size: 20px;
+align-items: center;
+justify-content: center;
+background-color: #ff0000;
+color: rgb(255, 255, 255);
+content: "×";
+cursor: pointer;
+opacity: 0; 
+animation: 1s fadeIn ease forwards .5s;
+}
+
+@keyframes grow {
+100% {
+height: 87%;
+width: 75%;}
+}
+
+@keyframes fadeIn {
+100% {
+opacity: 1;
+}
+}
+
+@keyframes slideUp {
+100% {
+transform: translateX(0);
+opacity: 1;
+}
+}
